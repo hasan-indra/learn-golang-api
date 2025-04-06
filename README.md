@@ -3,6 +3,23 @@ This project is for learn or create backend api using golang. I used go version 
 
 ## What I do
 ```bash
-# inital golang project & docker-compose
+# init golang project & docker-compose
+go mod init github.com/hasan-indra/learn-golang-api
+
+# dependencies
+go get github.com/gin-gonic/gin
+go get github.com/joho/godotenv
+
+# create structure project
+go-api
+--cmd
+----api 
+------main.go   # main files
+--internal
+----config      # configuration file
+----handlers    # request handlers
+----middleware  # custom middleware
+----route       # routes definition
+--pkg           # reusable package
 ```
 
